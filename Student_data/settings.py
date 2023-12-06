@@ -75,10 +75,15 @@ WSGI_APPLICATION = 'Student_data.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'dev.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'nodeproject',
+        'USER': 'dev',
+        'PASSWORD': 'password',
+        'HOST':'localhost',
+        'PORT':'3306',
     }
 }
 
